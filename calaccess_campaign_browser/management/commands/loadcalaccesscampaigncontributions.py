@@ -776,7 +776,7 @@ class Command(CalAccessCommand):
                 COALESCE(r.bakref_tid, ''),
                 COALESCE(r.xref_match, ''),
                 COALESCE(r.xref_schnm, ''),
-                r.is_duplicate,
+                COALESCE(r.is_duplicate, ''),
                 r.tran_type,
                 r.rcpt_date,
                 r.ctrib_dscr,
